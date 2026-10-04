@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website ucapan ulang tahun spesial" />
+    <title>Happy Birthday 🎂</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+
+    <header class="hero">
+      <nav class="navbar">
+        <div class="signature">Untukmu <span>Hana♡</span></div>
+        <button class="music-btn" id="musicBtn" aria-label="Putar musik"><span id="musicIcon">▶</span> Music</button>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">Perayaan kecil untuk seseorang yang istimewa</p>
+        <h1>Happy Birthday,<br /><span id="friendName">Sayangku</span>! 🎂</h1>
+        <p class="hero-text">Hari ini bukan sekadar bertambah usia. Hari ini adalah tentang merayakan seseorang yang membuat hari-hari menjadi lebih berwarna.</p>
+        <a href="#story" class="primary-btn">Buka Kejutan <span>↓</span></a>
+      </div>
+
+      <div class="floating-heart heart-1">♥</div>
+      <div class="floating-heart heart-2">♥</div>
+      <div class="floating-star star-1">✦</div>
+      <div class="floating-star star-2">✦</div>
+    </header>
+
+    <main>
+      <section class="section story" id="story">
+        <div class="section-label">01 — Hari Istimewa</div>
+        <div class="story-grid">
+          <div>
+            <h2>Untuk kamu yang<br /><em>luar biasa.</em></h2>
+          </div>
+          <div class="story-copy">
+            <p>Selamat ulang tahun! Semoga di usia yang baru ini, semakin banyak hal baik yang datang dalam hidupmu. Semoga semua mimpi yang sedang kamu perjuangkan perlahan menemukan jalannya.</p>
+            <p>Jangan lupa untuk selalu menikmati proses, tertawa lebih banyak, dan percaya bahwa kamu pantas mendapatkan hal-hal indah.</p>
+            <div class="signature">With love, <span>Someone dear 🥰♡</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section">
+        <div class="section-label">02 — Kenangan Kita</div>
+        <div class="gallery-heading">
+          <h2>Momen Kecil,<br /><em>Kenangan Indah.</em></h2>
+        </div>
+
+        <div class="gallery">
+          <figure class="photo-card photo-large">
+            <img src="assets/foto1.jpeg" alt="Kenangan 1" onerror="this.src = 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1000&q=85'" />
+            <figcaption>Memory 01</figcaption>
+          </figure>
+          <figure class="photo-card photo-small">
+            <img src="assets/foto2.jpeg" alt="Kenangan 2" onerror="this.src = 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=85'" />
+            <figcaption>Memory 02</figcaption>
+          </figure>
+          <figure class="photo-card photo-small">
+            <img src="assets/foto3.jpeg" alt="Kenangan 3" onerror="this.src = 'https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?auto=format&fit=crop&w=800&q=85'" />
+            <figcaption>Memory 03</figcaption>
+          </figure>
+          <figure class="photo-card photo-large">
+            <img src="assets/foto4.jpeg" alt="Kenangan 4" onerror="this.src = 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1000&q=85'" />
+            <figcaption>Memory 04</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section wishes">
+        <div class="section-label">03 — Ucapan Selamat Ulang Tahun</div>
+        <div class="wish-card">
+          <div class="cake">🤲</div>
+          <h2>Sampaikan permohonan.</h2>
+          <p>Semoga tahun ini membawa kesehatan, kebahagiaan, panjang umur, banyak rezeki, orang-orang baik, kesempatan baru, kelancaran segala urusan, kemudahan dalam kuliah, Bisa lulus tepat waktu dan banyak alasan untuk tersenyum.</p>
+          <div class="wish-list">
+            <span>✨ kebahagiaan</span>
+            <span>🌷 kesehatan</span>
+            <span>🚀 Kesukesan</span>
+            <span>💫 Keselamatan</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section final-section">
+        <div class="final-message">
+          <span class="mini-label">Satu hal terakhir...</span>
+          <h2>Tetaplah menjadi<br /><em>dirimu sendiri.</em> 💖</h2>
+          <p>Dunia memang tidak selalu sempurna, tapi semoga kamu selalu punya alasan untuk terus melangkah dan menikmati setiap cerita baru.</p>
+          <button class="surprise-btn" id="surpriseBtn">Klik untuk kejutan ✨</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made with ♡ especially for <span id="footerName">you</span></p>
+      <p class="footer-year">© <span id="year"></span></p>
+    </footer>
+
+    <div class="modal" id="surpriseModal" aria-hidden="true">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <button class="close-btn" id="closeModal" aria-label="Tutup">×</button>
+        <div class="confetti-icon">🎉</div>
+        <h2>Surprise!</h2>
+        <p id="modalMessage">Terima kasih sudah menjadi bagian dari cerita yang indah. Selamat ulang tahun! 💖</p>
+        <button class="primary-btn" id="modalCloseBtn">Thank you ♡</button>
+      </div>
+    </div>
+
+    <audio id="birthdayMusic" loop preload="auto">
+      <source src="assets/lagu-ulang-tahun.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
